@@ -1,0 +1,129 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.header {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background: #11d8a6;
+    font-size: 8px;
+    border:#03493b; 
+    border-width:2px; 
+    border-style:solid
+  }
+
+  label {
+    
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  .vertical {
+  
+    border-left: 2px solid #11d8a6;
+    height: 350px;
+    position:absolute;
+    left: 50%;
+    margin-left: -2px;
+    margin-top: 50px;
+    top: 70;
+    
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  background-color: rgb(52, 133, 255) ;
+  border-radius: 12px;
+  margin-left: 50px;
+  cursor: pointer;
+  
+}
+
+
+.button2 {
+  background-color :rgb(223, 52, 52);
+}
+
+#rcorners1 {
+  border-radius: 5px;
+  border: 1px solid #000000;
+  padding: 5px; 
+  width: 150px;
+  height: 25px;  
+}
+
+.footer {
+  height: 40px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #11d8a6;
+  color: white;
+  text-align: center;
+  border:#03493b; 
+  border-width:2px; 
+  border-style:solid
+}
+
+.rightcol{
+  font-weight: bold;
+  font-size: small;
+  left: 10%;
+  margin-left: 250px;
+  font-size: 20px;
+  width: 5%;
+  
+  
+}
+
+table { width: 10%; }
+table, th, td { 
+  border: solid 1px rgb(3, 54, 18);
+  border-collapse: collapse; 
+  padding: 2px 2px; 
+  text-align:left;
+}
+
+table tr:nth-child(even){
+ 
+  background: #c8e298d2;
+
+}
+
+table tr:nth-child(odd){
+ 
+  background: #fefffdf1;
+
+}
+
+.fade-in{
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 780px) {
+  .vertical {
+    border:none;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<!-- The head of the HTML page -->
+<head>
+    <div class="header">
+        <h1  style = "color: white; font-size: large;">Student Enrollment Form</h1>
+        <link rel="stylesheet" href="style.css" media="screen"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </div>
+</head>
+
+<!-- The body of the HTML page -->
+<body>
+    <!-- To make a vertical line between the page. -->
+    <div class = "vertical"></div>
+
+    <div class="container">
+      <form name="form1"> 
+        <div class="row">
+
+          <!-- Setting up the first column of the page containing the form. -->
+          <div class="col-sm"><br><br>
+
+            <!-- Input name. -->
+            <label style="font-weight: 900; font: 1em sans-serif;"> Name:</label>  
+            <input id = "namee" style="border-radius: 5px; border:1px solid #000000;" type="text" name="name" size="20" /> <br> <br> 
+
+            <!-- Input email. -->
+            <label style="font-weight: 900; font: 1em sans-serif;"> Email:</label>     
+            <input id="emaill" style="border-radius: 5px; border:1px solid #000000;" type="text" name="email" size="20"/> <br> <br> 
+
+            <!-- Input website. -->
+            <label style="font-weight: 900; font: 1em sans-serif;"> Website:</label>         
+            <input id="websitee" style="border-radius: 5px; border:1px solid #000000;" type="url" name="website" size="20"/> <br> <br>  
+
+            <!-- Input image. -->
+            <label style="font-weight: 900; font: 1em sans-serif;"> Image Link:</label>         
+            <input id="imglinkk" style="border-radius: 5px; border:1px solid #000000;" type="url" name="imagelink" size="20"/> <br> <br>  
+
+            <!-- Gender selection. -->
+            <label style="font-weight: 900; font: 1em sans-serif;"> Gender:</label> 
+            <input id="gender" type="radio" name="gender" value="Male">Male<br>
+            <input id="gender" style="margin-left: 9.7rem;" type="radio" name="gender" value="Female">Female<br><br>
+            
+            <!-- Skill selection. -->
+            <label style="font-weight: 900; font: 1em sans-serif;"> Skills:</label>
+            <input id="skill" type="Checkbox" name="skill" value="Java">Java
+            <input id="skill" type="Checkbox" name="skill" value="HTML">HTML
+            <input id="skill" type="Checkbox" name="skill" value="CSS">CSS<br><br><br>
+
+            <!-- Two buttons to perform different functions. -->
+            <button class="button" type="button" onclick="addStu();" >Enroll Student</button>
+            <button class="button button2" type="reset" value="Clear">Clear</button>
+          </form>
+          </div>
+
+          <!-- Setting up the second column to show the details of the students enrolled. -->
+          <div class="col-sm">
+            <h2 style="font-size:20px; text-align: center; margin-top: 30px;">Enrolled Students</h2>
+            <!-- Creating a table to store data. -->
+            <table id="tableID" class="table">
+              <thead>
+                <tr style="color:white; 
+                background-color:#a4da3fd2;">
+                  <th width="40%">Description</th>
+                  <th width="10%">Image</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+
+    <!-- Jumping to the script designed to perform functions. -->
+    <script defer src="script.js"></script>
+
+    <div class="footer">Copyright 2020-2021 by Fresher Training</div>
+
+  </body>
+</html>
